@@ -44,17 +44,21 @@ logo.src = siteContent["nav"]["img-src"];
 
 const navA = document.querySelectorAll("a");
 navA[0].textContent = siteContent["nav"]["nav-item-1"]
-navA[0].style.color = "green";
+
 navA[1].textContent = siteContent["nav"]["nav-item-2"]
-navA[1].style.color = "green";
+
 navA[2].textContent = siteContent["nav"]["nav-item-3"]
-navA[2].style.color = "green";
+
 navA[3].textContent = siteContent["nav"]["nav-item-4"]
-navA[3].style.color = "green";
+
 navA[4].textContent = siteContent["nav"]["nav-item-5"]
-navA[4].style.color = "green";
+
 navA[5].textContent = siteContent["nav"]["nav-item-6"]
-navA[5].style.color = "green";
+navA.forEach(aTag => {
+  aTag.style.color = "green";
+});
+console.log(navA[0]);
+
 
 const ctaH1 = document.querySelectorAll("h1");
 ctaH1[0].textContent = siteContent["cta"]["h1"];
@@ -85,6 +89,9 @@ const contactA = document.querySelectorAll('.contact p');
 contactA[0].textContent = siteContent['contact']['address'];
 contactA[1].textContent = siteContent['contact']['phone'];
 contactA[2].textContent = siteContent['contact']['email'];
+
+// const contacts = document.querySelector('.contact');
+// console.log(contacts);
 
 const footersC = document.querySelectorAll('footer');
 footersC[0].textContent = siteContent['footer']['copyright'];

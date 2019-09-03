@@ -89,15 +89,31 @@ contactA[2].textContent = siteContent['contact']['email'];
 const footersC = document.querySelectorAll('footer');
 footersC[0].textContent = siteContent['footer']['copyright'];
 
-var aTag1 = document.createElement('P');
-var aText1 = document.createTextNode('Home');
-aTag1.appendChild(aText1);
-document.getElementById('nav').appendChild(aTag1);
+const nav = document.querySelector('nav');
 
-var aTag2 = document.createElement('P');
-var aText2 = document.createTextNode('Home');
-aTag2.appendChild(aText2);
-document.getElementById('nav').appendChild(aTag2);
+const aTagOne = document.createElement('a');
+aTagOne.textContent = 'Home';
+nav.appendChild(aTagOne);
+
+const aTagTwo = document.createElement('a');
+aTagTwo.textContent = 'Settings';
+nav.appendChild(aTagTwo);
+
+aTagOne.style.color = 'green';
+aTagTwo.style.color = 'green';
+
+
+
+
+// var aTag1 = document.createElement('P');
+// var aText1 = document.createTextNode('Home');
+// aTag1.appendChild(aText1);
+// document.getElementById('nav').appendChild(aTag1);
+
+// var aTag2 = document.createElement('P');
+// var aText2 = document.createTextNode('Home');
+// aTag2.appendChild(aText2);
+// document.getElementById('nav').appendChild(aTag2);
 
 
 
